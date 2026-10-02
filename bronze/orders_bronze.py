@@ -1,5 +1,7 @@
 import dlt
+from pyspark.sql import SparkSession
 
+spark = SparkSession.getActiveSession()
 
 # streaming orders data
 def create_bronze_orders():

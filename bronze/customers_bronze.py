@@ -1,5 +1,7 @@
 import dlt
+from pyspark.sql import SparkSession
 
+spark = SparkSession.getActiveSession()
 
 # customers - Materialized view
 def create_bronze_customers():
